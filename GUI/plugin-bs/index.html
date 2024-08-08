@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BasicStation</title>
+    <link rel="stylesheet" href="./style_g.css">
+    <script src="./script.js" defer></script>
+    <script src="../base1/cockpit.js"></script>
+</head>
+<body>
+    <main> 
+        <section>
+            <h3>General Settings</h3>  
+            <table class="general-settings">
+                <tr>
+                    <td><label>Connect Status</label></td>
+                    <td><a href="/system/services#/colbits_basic_station.service" target="_top">Register</a></td>
+                </tr>
+                <tr>
+                    <td><label>Port</label></td>
+                    <td><input id="in_port"/></td>
+                </tr>
+                <tr>
+                    <td><label>Server</label></td>
+                    <td><input id="in_server"/></td>
+                </tr>
+            </table>
+        </section>
+        <br/>
+        <section>
+            <h3>TLS CA Certificate</h3>
+            <textarea id="in_tlsca"></textarea>
+            </table>
+        </section>
+        <footer>
+            <button id="save_b">Save & apply</button>
+            <button id="set_b">Set default</button>
+        </footer>
+    </main>
+</body>
+</html>
