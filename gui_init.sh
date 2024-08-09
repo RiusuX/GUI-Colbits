@@ -14,6 +14,7 @@ sudo rm -f /usr/share/cockpit/static/login.html
 sudo mv /opt/GUI-Colbits/Gui_login/static/login.html /usr/share/cockpit/static/
 
 sudo cp /opt/semtech/sx1302_hal/packet_forwarder/global_conf.json /home/pi/default_config.json
+sudo cp /opt/semtech/sx1302_hal/packet_forwarder/global_conf.json /opt/GUI-Colbits/GUI/plugin-pf/src/Custom/default_config.json
 
 sudo mkdir -p ~/.local/share/cockpit
 # Función para verificar la conexión LTE
