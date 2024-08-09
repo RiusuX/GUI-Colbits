@@ -1,0 +1,39 @@
+body.login-pf {
+    background: url("bg-plain.jpg") no-repeat 50% 0;
+    background-size: cover;
+    background-color: #101010;
+}
+
+#badge,
+#badge1 {
+    position: relative;
+}
+#badge {
+    width: 421px;
+    height: 83px;
+    background-image: url("logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 2;
+}
+#badge1 {
+    width: 449px;
+    height: 465px;
+    background-image: url("Gw_logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+#brand {
+    font-size: 18pt;
+    text-transform: uppercase;
+}
+
+#brand:before {
+    content: "${NAME}";
+}
+
+#index-brand:before {
+    content: "${NAME}";
+}
