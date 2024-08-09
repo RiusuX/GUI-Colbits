@@ -15,7 +15,7 @@ if [ "$1" = "-pf" ]; then
     sudo systemctl disable colbits_basic_station.service
     sudo systemctl enable sx1302_pkt_fwd.service
     rm /home/pi/.local/share/cockpit/plugin-bs
-    ln -snf /opt/GUI/plugin-pf /home/pi/.local/share/cockpit/plugin-pf
+    ln -snf /opt/GUI-Colbits/GUI/plugin-pf /home/pi/.local/share/cockpit/plugin-pf
     echo "servicio-bs desactivado y Servicio-pf activado."
 elif [ "$1" = "-bs" ]; then
     # Desactivamos el servicio correspondiente a "-pf" y activamos el servicio correspondiente a "-bs"
@@ -25,7 +25,7 @@ elif [ "$1" = "-bs" ]; then
     sudo systemctl disable sx1302_pkt_fwd.service
     sudo systemctl enable colbits_basic_station.service
     rm /home/pi/.local/share/cockpit/plugin-pf
-    ln -snf /opt/GUI/plugin-bs /home/pi/.local/share/cockpit/plugin-bs
+    ln -snf /opt/GUI-Colbits/GUI/plugin-bs /home/pi/.local/share/cockpit/plugin-bs
     echo "Servicio-pf desactivado y servicio-bs activado."
 else
     echo "Opción inválida. Debe ser '-bs' o '-pf'."
