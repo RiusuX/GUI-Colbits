@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced</title>
+    <link rel="stylesheet" href="./src/General/style_g.css">
+    <script src="./src/Advanced/script_a.js" defer></script>
+    <script src="../base1/cockpit.js"></script>
+</head>
+<body>
+    <main>
+        <section>
+            <h3>Intervals settings</h3>
+            <table class="tabla">
+                <tr>
+                    <td>Keep alive interval (s)</td>
+                    <td><input id="s_kai" size="10" type="number"></td>
+                </tr>
+                <tr>
+                    <td>Stat interval (s)</td>
+                    <td><input id="s_stat" size="10" type="number"/></td>
+                </tr>
+                <tr>
+                    <td>Push timeout (ms)</td>
+                    <td><input id="s_timeout" size="10" type="number"/></td>
+                </tr>
+            </table>
+        </section>
+        <br/>
+        <section>
+            <h3>Forward CRC settings</h3>
+            <table class="tabla">
+                <tr>
+                    <td>Forward CRC Disabled</td>
+                    <td><input id="sd_crc" type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>Forward CRC Error</td>
+                    <td><input id="se_crc" type="checkbox"/></td>
+                </tr>
+                <tr>
+                    <td>Forward CRC Valid</td>
+                    <td><input id="sv_crc" type="checkbox"/></td>
+                </tr>
+            </table>
+        </section>
+        <footer>
+            <button onclick="guardarInformacion()">Save & apply</button>  
+            <button onclick="se_default()">Set default</button> 
+        </footer>
+    </main>
+    
+</body>
+</html>
